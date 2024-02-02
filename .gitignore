@@ -1,0 +1,10 @@
+# Ignore all folders and files
+/*
+
+# Except .gitignore
+!.gitignore
+
+# Except config folders
+!hypr/
+!waybar/
+!rofi/
