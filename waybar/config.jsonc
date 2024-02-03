@@ -129,7 +129,7 @@
         "tooltip-format": "{essid} - {ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
-        "on-click": ". rofi-wifi-menu/rofi-wifi-menu.sh"
+        "on-click": "bash ~/.config/waybar/rofi-wifi-menu/rofi-wifi-menu.sh"
     },
 
     "bluetooth": {
@@ -139,6 +139,6 @@
 	    "tooltip-format": "{device_alias}",
 	    "tooltip-format-connected": " {device_enumerate}",
 	    "tooltip-format-enumerate-connected": "{device_alias}",
-      "on-click": ". rofi-bluetooth/rofi-bluetooth"
+      "on-click": "bash ~/.config/waybar/rofi-bluetooth/rofi-bluetooth"
     }
 }
