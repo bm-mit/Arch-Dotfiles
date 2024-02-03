@@ -7,20 +7,21 @@ local keymap = vim.keymap
 -- Home/End bindings
 keymap.set("n", "<home>", "_")
 keymap.set("n", "<end>", "g$")
-keymap.set("n", "u", "_")
-keymap.set("n", "o", "g$")
-keymap.set("n", "<C-,>", ":go 1<return>")
-keymap.set("n", "<C-.>", "G")
+keymap.set("n", "<kHome>", "_")
+keymap.set("n", "<kEnd>", "g$")
 keymap.set("n", "<C-home>", ":go 1<return>")
-keymap.set("n", "<C-end>", "G")
+keymap.set("n", "<C-end>", "Gg$")
+
 keymap.set("i", "<home>", "<esc>_i")
 keymap.set("i", "<C-home>", "<esc>:go 1<return>i")
+keymap.set("i", "<end>", "<esc>g$i")
+keymap.set("i", "<C-end>", "<esc>Gg$i")
 
 -- Move lines
 keymap.set("n", "<M-up>", "ddkP")
 keymap.set("n", "<M-down>", "ddp")
 keymap.set("v", "<M-up>", "xkP`[V`]")
-keymap.set("v", "<M-up>", "xk`[V`]`")
+keymap.set("v", "<M-down>", "xk`[V`]`")
 
 -- Select all
 keymap.set("n", "<C-a>", "gg<S-v>G")
@@ -42,7 +43,16 @@ keymap.set("i", "<C-y>", "<esc>:redo<return>i")
 
 -- Tab controls
 keymap.set("n", "tn", ":tabnew ")
-keymap.set("n", "tm", ":tabnew<return>")
-keymap.set("n", "tk", ":tabnext<return>")
-keymap.set("n", "tj", ":tabprev<return>")
+keymap.set("n", "<C-t>", ":tabnew<return>")
 keymap.set("n", "tw", ":tabclose<return>")
+keymap.set("n", "<C-w>", ":tabclose<return>")
+keymap.set("n", "tj", ":tabnext<return>")
+keymap.set("n", "<C-j>", ":tabnext<return>")
+keymap.set("n", "tk", ":tabprev<return>")
+keymap.set("n", "<C-k>", ":tabprev<return>")
+
+-- Indents
+keymap.set("n", "<C-.>", ">>")
+keymap.set("n", "<C-,>", "<<")
+keymap.set("v", "<C-.>", ">")
+keymap.set("v", "<C-,>", "<")
