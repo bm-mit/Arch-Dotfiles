@@ -4,6 +4,10 @@
 # Except .gitignore
 !.gitignore
 
+# Auto install files
+!scripts/
+!install.sh
+
 # Except config folders
 !hypr/
 !waybar/
