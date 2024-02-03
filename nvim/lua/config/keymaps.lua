@@ -4,6 +4,11 @@
 
 local keymap = vim.keymap
 
+-- Modes
+keymap.set("n", "vb", "<C-v>")
+keymap.set("t", "<C-[>", "<C-\\><C-n>")
+keymap.set("t", "<esc>", "<C-\\><C-n>")
+
 -- Home/End bindings
 keymap.set("n", "<home>", "_")
 keymap.set("n", "<end>", "g$")
@@ -54,5 +59,11 @@ keymap.set("n", "<C-k>", ":tabprev<return>")
 -- Indents
 keymap.set("n", "<C-.>", ">>")
 keymap.set("n", "<C-,>", "<<")
+keymap.set("i", "<C-.>", "<esc>>>i")
+keymap.set("i", "<C-,>", "<esc><<i")
 keymap.set("v", "<C-.>", ">")
 keymap.set("v", "<C-,>", "<")
+
+-- Newline at EOL
+keymap.set("n", "<C-Enter>", "o<esc>")
+keymap.set("i", "<C-Enter>", "<esc>o")
