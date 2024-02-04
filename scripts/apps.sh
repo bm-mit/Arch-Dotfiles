@@ -29,11 +29,13 @@ yay -S visual-studio-code-bin \
 	pycharm-professional \
 	spotify \
 	kuro \
-	ibus-bamboo \
 	grimblast
 
 brew install neovim \
 	oh-my-posh
+
+# install ibus-bamboo
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/BambooEngine/ibus-bamboo/master/archlinux/install.sh)"
 
 # app setup
 
