@@ -10,7 +10,9 @@ sudo pacman -S polkit-gnome \
 	neofetch \
 	tree \
 	hyprland \
-	hyprpaper
+	hyprpaper \
+	brightnessctl \
+	pamixer
 
 yay -S visual-studio-code-bin \
 	microsoft-edge-stable-bin \
