@@ -23,3 +23,8 @@ yay -S visual-studio-code-bin \
 
 brew install neovim
 brew install oh-my-posh
+
+# app setup
+
+# oh-my-posh
+echo 'eval "$(oh-my-posh init bash --config ~/.config/oh-my-posh/M365PrincessBased.omp.json)"' >>~/.bashrc
