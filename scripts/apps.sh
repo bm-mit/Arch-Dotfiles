@@ -21,8 +21,8 @@ yay -S visual-studio-code-bin \
 	spotify \
 	kuro
 
-brew install neovim
-brew install oh-my-posh
+brew install neovim \
+	oh-my-posh
 
 # app setup
 
