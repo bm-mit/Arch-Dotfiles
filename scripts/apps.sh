@@ -9,7 +9,8 @@ sudo pacman -S polkit-gnome \
 	kitty \
 	neofetch \
 	tree \
-	hyprland
+	hyprland \
+	hyprpaper
 
 yay -S visual-studio-code-bin \
 	microsoft-edge-stable-bin \
