@@ -3,6 +3,7 @@ sudo pacman -S polkit-gnome \
 	dbeaver \
 	rofi \
 	nautilus \
+	gnome-terminal \
 	gnome-system-monitor \
 	gnome-disk-utility \
 	gnome-font-viewer \
@@ -12,7 +13,10 @@ sudo pacman -S polkit-gnome \
 	hyprland \
 	hyprpaper \
 	brightnessctl \
-	pamixer
+	pamixer \
+	blueman \
+	bluez-utils \
+	ntfs-3g
 
 yay -S visual-studio-code-bin \
 	microsoft-edge-stable-bin \
