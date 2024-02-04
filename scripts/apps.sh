@@ -1,21 +1,22 @@
-sudo pacman -S polkit-gnome
-sudo pacman -S cliphist
-sudo pacman -S dbeaver
-sudo pacman -S rofi
-sudo pacman -S nautilus
-sudo pacman -S gnome-system-monitor
-sudo pacman -S gnome-disk-utility
-sudo pacman -S gnome-font-viewer
-sudo pacman -S kitty
-sudo pacman -S neofetch
-sudo pacman -S tree
+sudo pacman -S polkit-gnome \
+	cliphist \
+	dbeaver \
+	rofi \
+	nautilus \
+	gnome-system-monitor \
+	gnome-disk-utility \
+	gnome-font-viewer \
+	kitty \
+	neofetch \
+	tree \
+	hyprland
 
-yay -S visual-studio-code-bin
-yay -S microsoft-edge-stable-bin
-yay -S ookla-speedtest-bin
-yay -S pycharm-professional
-yay -S spotify
-yay -S kuro
+yay -S visual-studio-code-bin \
+	microsoft-edge-stable-bin \
+	ookla-speedtest-bin \
+	pycharm-professional \
+	spotify \
+	kuro
 
 brew install neovim
 brew install oh-my-posh

@@ -3,3 +3,4 @@
 . scripts/dependencies.sh
 . scripts/yay.sh
 . scripts/apps.sh
+. scripts/waybar.sh
