@@ -6,6 +6,7 @@
 
 # Fonts
 !fonts/
+!media/
 
 # Auto install files
 !scripts/
