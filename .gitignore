@@ -4,6 +4,9 @@
 # Except .gitignore
 !.gitignore
 
+# Fonts
+!fonts/
+
 # Auto install files
 !scripts/
 !install.sh

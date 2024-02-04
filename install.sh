@@ -4,3 +4,4 @@
 . scripts/yay.sh
 . scripts/apps.sh
 . scripts/waybar.sh
+. scripts/fonts.sh
