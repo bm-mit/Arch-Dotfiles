@@ -16,6 +16,8 @@ keymap.set("n", "<kHome>", "_")
 keymap.set("n", "<kEnd>", "g$")
 keymap.set("n", "<C-home>", ":go 1<return>")
 keymap.set("n", "<C-end>", "Gg$")
+keymap.set("n", "<C-kHome>", ":go 1<return>")
+keymap.set("n", "<C-kEnd>", "Gg$")
 
 keymap.set("i", "<home>", "<esc>_i")
 keymap.set("i", "<C-home>", "<esc>:go 1<return>i")
