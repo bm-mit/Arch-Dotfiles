@@ -21,7 +21,8 @@ sudo pacman -S polkit-gnome \
 	ibus \
 	npm \
 	wev \
-	networkmanager-openvpn
+	networkmanager-openvpn \
+	less
 
 yay -S visual-studio-code-bin \
 	microsoft-edge-stable-bin \

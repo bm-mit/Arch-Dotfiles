@@ -1,5 +1,4 @@
-# sudo pacman -Syyu
-
+. scripts/copy.sh
 . scripts/dependencies.sh
 . scripts/yay.sh
 . scripts/apps.sh
