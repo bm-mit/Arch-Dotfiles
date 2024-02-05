@@ -1,7 +1,5 @@
-. scripts/copy.sh
 . scripts/dependencies.sh
-. scripts/yay.sh
 . scripts/apps.sh
-. scripts/waybar.sh
 . scripts/fonts.sh
 . scripts/services.sh
+. scripts/copy.sh
