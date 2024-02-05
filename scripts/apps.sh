@@ -20,6 +20,7 @@ sudo pacman -S polkit-gnome \
 	hyprland \
 	hyprpaper \
 	brightnessctl \
+	playerctl \
 	pamixer \
 	blueman \
 	bluez-utils \
