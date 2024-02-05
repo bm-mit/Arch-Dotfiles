@@ -71,6 +71,8 @@ tooltip {
 
 #window {
     min-width: 11px;
+    font-family: Grandview;
+    font-size: 13px;
 }
 
 #temperature {

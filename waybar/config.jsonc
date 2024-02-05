@@ -1,6 +1,6 @@
 {
     "layer": "top",
-    "position": "top",
+    "position": "bottom",
     "mod": "dock",
     "exclusive": true,
     "passthrough": false,
@@ -8,12 +8,11 @@
     "height": 30,
     "margin-left": 10,
     "margin-right": 10,
-    "margin-top": 10,
-    "margin-bottom": 0,
+    "margin-bottom": 10,
     "modules-left": ["clock", "hyprland/workspaces"],
     //"modules-left": ["clock","hyprland/window"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["battery","backlight","pulseaudio","pulseaudio#microphone","tray", "network", "bluetooth"], 
+    "modules-right": ["battery","backlight","pulseaudio","pulseaudio#microphone", "network", "bluetooth"], 
     "hyprland/window": {
         "format": "{}"
     },
