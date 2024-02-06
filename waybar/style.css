@@ -1,165 +1,81 @@
 * {
-    border: none;
-    border-radius: 0px;
-    font-family: "JetBrainsMono Nerd Font";
-    font-weight: bold;
-    font-size: 11px;
-    min-height: 0;
-    transition: 0.1s;
+  font-family: "Grandview", "Fira Code";
+  min-height: 0;
+  transition: all 0.2s;
+}
+
+code {
+  font-family: "Fira Code";
 }
 
 window#waybar {
-    background: rgba(21, 18, 27, 0);
-    color: #cdd6f4;
+  background: rgba(0, 0, 0, 0);
 }
 
-tooltip {
-    background: #1e1e2e;
-    border-radius: 10px;
-    border-width: 1.5px;
-    border-style: solid;
-    border-color: #11111b;
-    transition: 0.3s;
+.modules-left {
+  margin-left: 15px;
 }
 
-#workspaces button {
-    padding: 5px;
-    color: #313244;
-    margin-right: 3px;
+.modules-center {
+  margin: 0 10px;
 }
 
-#workspaces button.active {
-    color: #89b4fa;
+.modules-right {
+  margin-right: 15px;
 }
 
-#workspaces button.focused {
-    color: #a6adc8;
-    background: #eba0ac;
-    border-radius: 20px;
-}
-
-#workspaces button.urgent {
-    color: #11111b;
-    background: #a6e3a1;
-    border-radius: 20px;
-}
-
-#workspaces button:hover {
-    background: #11111b;
-    color: #cdd6f4;
-    border-radius: 20px;
-}
-
-#custom-power_profile,
-#custom-weather,
-#window,
 #clock,
+#window,
+#workspaces,
 #battery,
+#backlight,
 #pulseaudio,
 #network,
-#bluetooth,
-#temperature,
-#workspaces,
-#tray,
-#backlight {
-    background: #1e1e2e;
-    opacity: 0.8;
-    padding: 0px 10px;
-    margin: 0;
-    border: 1px solid #181825;
-}
-
-#window {
-    min-width: 11px;
-    font-family: Grandview;
-    font-size: 13px;
-}
-
-#temperature {
-    border-radius: 20px 0px 0px 20px;
-}
-
-#temperature.critical {
-    color: #eba0ac;
-}
-
-#backlight {
-    border-radius: 20px 0px 0px 20px;
-    padding-left: 7px;
-}
-
-#tray {
-    border-radius: 20px;
-    margin-right: 5px;
-    padding: 0px 4px;
-}
-
-#workspaces {
-    background: #1e1e2e;
-    border-radius: 20px;
-    margin-left: 5px;
-    padding-right: 0px;
-    padding-left: 5px;
-}
-
-#custom-power_profile {
-    color: #a6e3a1;
-    border-left: 0px;
-    border-right: 0px;
-}
-
-#window {
-    border-radius: 20px;
-    margin-left: 5px;
-    margin-right: 5px;
+#bluetooth {
+  background: rgba(256, 256, 256, 0.7);
+  border-radius: 500px;
+  padding: 0 10px;
 }
 
 #clock {
-    color: #fab387;
-    border-radius: 20px;
-    margin-left: 5px;
-    border-right: 0px;
-    transition: 0.3s;
-    padding-left: 7px;
+  color: #0D6D63;
 }
 
-#network {
-    color: #f9e2af;
-    border-radius: 20px 0px 0px 20px;
-    border-left: 0px;
-    border-right: 0px;
+#window {
+  color: #1A5D75;
 }
 
-#bluetooth {
-    color: #89b4fa;
-    border-radius: 0 20px 20px 0;
-    margin-right: 10px
-} 
-
-#pulseaudio {
-    color: #89b4fa;
-    border-left: 0px;
-    border-right: 0px;
+#workspaces {
+  padding: 4px 2px;
 }
 
-#pulseaudio.microphone {
-    color: #cba6f7;
-    border-left: 0px;
-    border-right: 0px;
-    border-radius: 0px 20px 20px 0px;
-    margin-right: 5px;
-    padding-right: 8px;
+#workspaces button {
+  border-radius: 500px;
+  padding: 1px;
+  margin: 0 2px;
+  background: #707070;
 }
 
-#battery {
-    color: #a6e3a1;
-    border-radius: 20px;
-    margin-right: 5px;
-    border-left: 0px;
+#taskbar button,
+#taskbar button:hover,
+#workspaces button,
+#workspaces button:hover,
+#workspaces button.active,
+#workspaces button.active:hover {
+  border: none;
+  box-shadow: none;
 }
 
-#custom-weather {
-    border-radius: 20px;
-    border-right: 0px;
-    margin-left: 0px;
+#taskbar button:hover,
+#workspaces button:hover {
+  background: rgba(160, 160, 160, 0.9);
+}
+
+#workspaces button.active:hover {
+  background: rgba(0, 53, 84, 0.7);
+}
+
+#workspaces button.active {
+  background: #003554;
+  padding: 1px 10px;
 }
