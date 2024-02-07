@@ -54,6 +54,7 @@
 
   "pulseaudio": {
     "format": "{icon}  {volume}%",
+    "format-muted": "󰝟  0%",
     "format-icons": {
       "headphone": "",
       "hands-free": "",

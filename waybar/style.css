@@ -79,3 +79,19 @@ window#waybar {
   background: #003554;
   padding: 1px 10px;
 }
+
+#battery {
+  color: #805b10;
+}
+
+#backlight {
+  color: #023e8a;
+}
+
+#pulseaudio {
+  color: #2d6a4f;
+}
+
+#bluetooth {
+  color: #1565c0;
+}
