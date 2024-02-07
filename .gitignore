@@ -12,6 +12,9 @@
 !scripts/
 !install.sh
 
+# sddm themes
+!sddm-themes/
+
 # Except config folders
 !hypr/
 !waybar/
