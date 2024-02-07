@@ -61,11 +61,3 @@ rm -rf dragon-hyprland
 
 # install ibus-bamboo
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/BambooEngine/ibus-bamboo/master/archlinux/install.sh)"
-
-# app setup
-
-# oh-my-posh
-echo 'eval "$(oh-my-posh init bash --config ~/.config/oh-my-posh/M365PrincessBased.omp.json)"' >>~/.bashrc
-
-# pip
-sudo rm /usr/lib/python3.11/EXTERNALLY-MANAGED
