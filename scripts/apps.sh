@@ -1,10 +1,15 @@
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-cd ..
-rm -rf yay
+sudo pacman -Syyu
 
-sudo pacman -S polkit-gnome \
+sudo pacman -S \
+	base-devel \
+	python3 \
+	python-pip \
+	gcc \
+	ninja \
+	meson \
+	make \
+	go \
+	polkit-gnome \
 	cliphist \
 	dbeaver \
 	rofi \
@@ -31,7 +36,15 @@ sudo pacman -S polkit-gnome \
 	networkmanager-openvpn \
 	less \
 	iw \
-	bc
+	bc \
+	pandoc
+
+# yay
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+cd ..
+rm -rf yay
 
 yay -S visual-studio-code-bin \
 	microsoft-edge-stable-bin \
@@ -41,8 +54,19 @@ yay -S visual-studio-code-bin \
 	kuro \
 	grimblast
 
+# Homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+(
+	echo
+	echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"'
+) >>~/.bashrc
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"i
+
 brew install neovim \
 	oh-my-posh
+
+# npm
+sudo npm install -g @compodoc/live-server
 
 # Waybar install
 git clone https://github.com/Alexays/Waybar
