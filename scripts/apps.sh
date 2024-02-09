@@ -53,7 +53,8 @@ yay -S visual-studio-code-bin \
 	spotify \
 	kuro \
 	grimblast \
-	pfetch
+	pfetch \
+	swaylock-effects
 
 # Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
