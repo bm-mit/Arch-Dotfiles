@@ -52,7 +52,8 @@ yay -S visual-studio-code-bin \
 	pycharm-professional \
 	spotify \
 	kuro \
-	grimblast
+	grimblast \
+	pfetch
 
 # Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
