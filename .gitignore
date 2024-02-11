@@ -1,6 +1,9 @@
 # Ignore all folders and files
 /*
 
+# Ignore neovim lock file
+lazy-lock.json
+
 # Except .gitignore
 !.gitignore
 
