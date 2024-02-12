@@ -2,7 +2,7 @@
 cp -r . ~/.config/
 
 # install fonts
-sudo cp -r fonts/ /usr/share/fonts/
+sudo cp -r fonts/ /usr/share/
 fc-cache -f -v
 
 # git
