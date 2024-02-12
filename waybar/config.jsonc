@@ -70,7 +70,7 @@
     "format": "{ifname}",
     "format-wifi": "{icon}  {essid}",
     "format-ethernet": "󰈀  {ipaddr}",
-    "format-disconnected": "󰤮 Disconnected",
+    "format-disconnected": "󰤮  Disconnected",
     "format-icons": {
       "wifi": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤥"]
     },
