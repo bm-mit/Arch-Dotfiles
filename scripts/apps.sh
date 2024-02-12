@@ -56,7 +56,8 @@ yay -S visual-studio-code-bin \
 	pfetch \
 	swaylock-effects \
 	swayidle \
-	wlogout
+	wlogout \
+	idlehack
 
 # Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
