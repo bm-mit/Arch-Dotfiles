@@ -37,7 +37,8 @@ sudo pacman -S \
 	less \
 	iw \
 	bc \
-	pandoc
+	pandoc \
+	pavucontrol
 
 # yay
 git clone https://aur.archlinux.org/yay.git
