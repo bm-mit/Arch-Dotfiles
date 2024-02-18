@@ -19,6 +19,9 @@ sudo pacman -S \
 	gnome-system-monitor \
 	gnome-disk-utility \
 	gnome-font-viewer \
+	gnome-text-editor \
+	gnome-characters \
+	gnome-calendar \
 	kitty \
 	neofetch \
 	tree \
@@ -38,7 +41,8 @@ sudo pacman -S \
 	iw \
 	bc \
 	pandoc \
-	pavucontrol
+	pavucontrol \
+	tlp
 
 # yay
 git clone https://aur.archlinux.org/yay.git
@@ -58,7 +62,8 @@ yay -S visual-studio-code-bin \
 	swaylock-effects \
 	swayidle \
 	wlogout \
-	idlehack
+	idlehack \
+	auto-cpufreq
 
 # Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
