@@ -42,6 +42,7 @@ window#waybar {
 }
 
 #window {
+  font-weight: bold;
   color: #1A5D75;
 }
 
@@ -54,6 +55,8 @@ window#waybar {
   padding: 3px;
   margin: 0 2px;
   background: #707070;
+  color: rgba(256, 256, 256, 0.7);
+  font-weight: normal;
 }
 
 #taskbar button,
@@ -79,7 +82,7 @@ window#waybar {
 #workspaces button.active {
   background: #003554;
   padding: 1px 10px;
-  color: rgba(256, 256, 256, 0.7);
+  font-weight: bold;
 }
 
 #battery {
@@ -92,6 +95,10 @@ window#waybar {
 
 #pulseaudio {
   color: #2d6a4f;
+}
+
+#network {
+  color: #333333;
 }
 
 #bluetooth {
