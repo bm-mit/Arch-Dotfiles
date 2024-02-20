@@ -6,19 +6,26 @@ local keymap = vim.keymap
 
 -- Modes
 keymap.set("n", "vb", "<C-v>")
+
+-- Terminal
 keymap.set("t", "<C-[>", "<C-\\><C-n>")
 keymap.set("t", "<esc>", "<C-\\><C-n>")
+keymap.set("n", "<C-t>", ":10split<return>:term<return>i")
+keymap.set("i", "<C-t>", "<esc>:15split<return>:term<return>i")
 
--- Home/End bindings
+-- Navigations
 keymap.set("n", "<home>", "_")
 keymap.set("n", "<end>", "g$")
 keymap.set("n", "<kHome>", "_")
 keymap.set("n", "<kEnd>", "g$")
+keymap.set("n", "u", "_")
+keymap.set("n", ";", "g$")
 keymap.set("n", "<C-home>", ":go 1<return>")
 keymap.set("n", "<C-end>", "Gg$")
 keymap.set("n", "<C-kHome>", ":go 1<return>")
 keymap.set("n", "<C-kEnd>", "Gg$")
-
+keymap.set("n", "<C-u>", ":go 1<return>")
+keymap.set("n", "<C-;>", "Gg$")
 keymap.set("i", "<home>", "<esc>_i")
 keymap.set("i", "<C-home>", "<esc>:go 1<return>i")
 keymap.set("i", "<end>", "<esc>g$i")
@@ -48,15 +55,9 @@ keymap.set("n", "<C-y>", ":redo<return>")
 keymap.set("i", "<C-z>", "<esc>:undo<return>i")
 keymap.set("i", "<C-y>", "<esc>:redo<return>i")
 
--- Tab controls
-keymap.set("n", "tn", ":tabnew ")
-keymap.set("n", "<C-t>", ":tabnew<return>")
-keymap.set("n", "tw", ":tabclose<return>")
-keymap.set("n", "<C-w>", ":tabclose<return>")
-keymap.set("n", "tj", ":tabnext<return>")
-keymap.set("n", "<C-j>", ":tabnext<return>")
-keymap.set("n", "tk", ":tabprev<return>")
-keymap.set("n", "<C-k>", ":tabprev<return>")
+-- Buffer controls
+keymap.set("n", "<S-w>", ":bdelete<return>")
+keymap.set("n", "<C-w>", ":bdelete<return>")
 
 -- Indents
 keymap.set("n", "<C-.>", ">>")
