@@ -23,6 +23,7 @@ sudo pacman -S \
 	gnome-characters \
 	gnome-calendar \
 	kitty \
+	zsh \
 	neofetch \
 	tree \
 	hyprland \
