@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=/home/mit-arch/.local/share/gem/ruby/3.0.0/bin:$PATH
 
 ZSH_DISABLE_COMPFIX=true
 PROMPT_EOL_MARK=''
@@ -111,7 +111,20 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh
 alias a="./a.out"
 alias cl="clear"
-alias gpp="g++"
+
+# colorls aliases
+alias ls="colorls --sd"
+alias lsa="colorls -A"
+alias lsd="colorls -d"
+alias lsf="colorls -f"
+alias lsr="colorls -r"
+alias ll="colorls -l"
+alias lla="colorls -lA"
+alias lst="colorls --tree"
+alias lsg="colorls --gs"
+alias lsga="colorls --gs -A"
+alias lsgd="colorls --gs -d"
+alias lsgt="colorls --gs --tree"
 
 eval "$(starship init zsh)"
 
