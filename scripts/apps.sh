@@ -11,7 +11,6 @@ sudo pacman -S \
 	go \
 	polkit-gnome \
 	cliphist \
-	dbeaver \
 	rofi \
 	nautilus \
 	gnome-calculator \
@@ -55,9 +54,7 @@ rm -rf yay
 yay -S visual-studio-code-bin \
 	microsoft-edge-stable-bin \
 	ookla-speedtest-bin \
-	pycharm-professional \
 	spotify \
-	kuro \
 	grimblast \
 	pfetch \
 	swaylock-effects \
@@ -73,11 +70,11 @@ yay -S visual-studio-code-bin \
 (
 	echo
 	echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"'
-) >>~/.bashrc
-(
-	echo
-	echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"'
 ) >>~/.zshrc
+
+# oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 brew install neovim \
@@ -104,4 +101,3 @@ rm -rf dragon-hyprland
 
 # install ibus-bamboo
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/BambooEngine/ibus-bamboo/master/archlinux/install.sh)"
-
