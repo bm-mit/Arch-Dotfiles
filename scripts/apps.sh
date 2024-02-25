@@ -75,7 +75,8 @@ yay -S visual-studio-code-bin \
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"i
 
 brew install neovim \
-	oh-my-posh
+	oh-my-posh \
+	zsh-autosugesstions
 
 # npm
 sudo npm install -g @compodoc/live-server

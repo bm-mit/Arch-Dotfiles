@@ -10,6 +10,7 @@ git config --global credential.helper store
 
 # oh-my-posh
 echo 'eval "$(oh-my-posh init bash --config ~/.config/oh-my-posh/M365PrincessBased.omp.json)"' >>~/.bashrc
+echo 'eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/M365PrincessBased.omp.json)"' >>~/.zshrc
 
 # pip
 sudo rm /usr/lib/python3.11/EXTERNALLY-MANAGED
