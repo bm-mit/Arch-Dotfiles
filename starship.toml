@@ -1,0 +1,30 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = false
+
+format = '''
+ $directory$git_branch
+ $character
+'''
+right_format = '''
+ $username
+ $python
+'''
+
+[directory]
+truncate_to_repo = false
+truncation_length = 5
+
+[character]
+success_symbol = '[➜](bold green)'
+error_symbol = '[➜](bold red)'
+
+[username]
+show_always = true
+format = '[$user]($style)'
+style_user = 'bold green'
+
+[python]
+format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+version_format = '${raw}'

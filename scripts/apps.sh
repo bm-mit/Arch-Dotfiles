@@ -42,7 +42,8 @@ sudo pacman -S \
 	bc \
 	pandoc \
 	pavucontrol \
-	tlp
+	tlp \
+	starship
 
 # yay
 git clone https://aur.archlinux.org/yay.git
@@ -63,7 +64,8 @@ yay -S visual-studio-code-bin \
 	idlehack \
 	auto-cpufreq \
 	zsh-syntax-highlighting \
-	zoxide
+	zoxide \
+	fzf
 
 # Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"

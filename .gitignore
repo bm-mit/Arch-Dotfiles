@@ -6,6 +6,8 @@ lazy-lock.json
 
 # Except .gitignore
 !.gitignore
+!/starship.toml
+!/.zshrc
 
 # Fonts
 !fonts/

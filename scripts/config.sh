@@ -1,8 +1,8 @@
-# shell configuration
-. scripts/config/shell.sh
-
 # config files
 cp -r . ~/.config/
+
+rm ~/.zshrc
+ln -s ~/.config/.zshrc ~/.zshrc
 
 # install fonts
 sudo cp -r fonts/ /usr/share/
