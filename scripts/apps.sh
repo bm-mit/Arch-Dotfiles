@@ -64,7 +64,8 @@ yay -S visual-studio-code-bin \
 	swayidle \
 	wlogout \
 	idlehack \
-	auto-cpufreq
+	auto-cpufreq \
+	zsh-syntax-highlighting
 
 # Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"

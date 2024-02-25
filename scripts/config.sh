@@ -12,6 +12,9 @@ git config --global credential.helper store
 echo 'eval "$(oh-my-posh init bash --config ~/.config/oh-my-posh/M365PrincessBased.omp.json)"' >>~/.bashrc
 echo 'eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/M365PrincessBased.omp.json)"' >>~/.zshrc
 
+# zsh autosuggestions
+echo 'source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh' >>~/.zshrc
+
 # pip
 sudo rm /usr/lib/python3.11/EXTERNALLY-MANAGED
 
