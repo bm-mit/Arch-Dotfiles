@@ -26,10 +26,12 @@ echo >>~/.zshrc
 echo 'source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh' >>~/.zshrc
 
 # zoxide
-echo 'eval "$(zoxide init bash)"' >>~/.bashrc
-echo 'eval "$(zoxide init zsh)"' >>~/.zshrc
-echo 'alias cd=z' >>~/.bashrc
-echo 'alias cd=z' >>~/.zshrc
+echo 'eval "$(zoxide init bash --cmd=cd)"' >>~/.bashrc
+echo 'eval "$(zoxide init zsh --cmd=cd)"' >>~/.zshrc
+
+# aliases
+echo 'eval "$(alias ls=ls --color=auto)"' >>~/.zshrc
+echo 'eval "$(alias ll=ls -al)"' >>~/.zshrc
 
 # pip
 sudo rm /usr/lib/python3.11/EXTERNALLY-MANAGED

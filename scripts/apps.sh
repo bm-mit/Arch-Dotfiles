@@ -74,7 +74,11 @@ yay -S visual-studio-code-bin \
 	echo
 	echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"'
 ) >>~/.bashrc
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"i
+(
+	echo
+	echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"'
+) >>~/.zshrc
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 brew install neovim \
 	oh-my-posh \
@@ -100,3 +104,4 @@ rm -rf dragon-hyprland
 
 # install ibus-bamboo
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/BambooEngine/ibus-bamboo/master/archlinux/install.sh)"
+
