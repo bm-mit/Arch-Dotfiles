@@ -121,5 +121,6 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 . "/usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 . "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+. "$(dirname $(gem which colorls))/tab_complete.sh"
 
 eval "$(zoxide init zsh --cmd=cd)"

@@ -43,7 +43,9 @@ sudo pacman -S \
 	pandoc \
 	pavucontrol \
 	tlp \
-	starship
+	starship \
+	bat \
+	ruby
 
 # yay
 git clone https://aur.archlinux.org/yay.git
@@ -100,6 +102,9 @@ cd dragon-hyprland
 sudo make install
 cd ..
 rm -rf dragon-hyprland
+
+# install colorls
+gem install colorls
 
 # install ibus-bamboo
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/BambooEngine/ibus-bamboo/master/archlinux/install.sh)"
