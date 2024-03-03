@@ -7,14 +7,19 @@ format = '''
  $directory$git_branch$git_status
  $character
 '''
-right_format = '''
- $username
- $python
-'''
+
+right_format = """
+$username\
+$python\
+$dotnet
+"""
 
 [directory]
 truncate_to_repo = false
-truncation_length = 5
+truncation_length = 4
+truncation_symbol = '.../'
+before_repo_root_style = 'bold blue'
+repo_root_style = "bold red"
 
 [character]
 success_symbol = '[➜](bold green)'
@@ -26,5 +31,8 @@ format = '[$user]($style)'
 style_user = 'bold green'
 
 [python]
-format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+format = ' via [${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
 version_format = '${raw}'
+
+[dotnet]
+format = ' via [$symbol$version (🎯 $tfm )]($style)'

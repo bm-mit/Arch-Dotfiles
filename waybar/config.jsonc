@@ -9,11 +9,8 @@
 
   "modules-left": [
     "clock",
-    "wlr/taskbar"
-  ],
-
-  "modules-center": [
-    "hyprland/workspaces"
+    "hyprland/workspaces",
+    "hyprland/window"
   ],
 
   "modules-right": [
@@ -84,11 +81,12 @@
     "format-icons": ["󰂯"],
     "on-click": "~/.config/waybar/rofi-bluetooth/rofi-bluetooth"
   }
-},
-{
-  "mode": "dock",
-  "position": "top",
-  "modules-center": ["hyprland/window"],
-  "margin-top": 10,
-  "height": 25,
+}
+]
+// {
+//  "mode": "dock",
+//  "position": "top",
+//  "modules-center": ["hyprland/window"],
+//  "margin-top": 10,
+//  "height": 25,
 }]

@@ -4,6 +4,9 @@ export PATH=/home/mit-arch/.local/share/gem/ruby/3.0.0/bin:$PATH
 ZSH_DISABLE_COMPFIX=true
 PROMPT_EOL_MARK=''
 
+setopt MENU_COMPLETE
+setopt globdots
+
 # Path to your oh-my-zsh installation.
 export ZSH="$(eval echo ~$USER)/.oh-my-zsh"
 
@@ -80,6 +83,9 @@ plugins=(
     sudo
     you-should-use
     zsh-abbr
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+    zsh-vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -117,7 +123,7 @@ alias ls="colorls --sd"
 alias lsa="colorls -A"
 alias lsd="colorls -d"
 alias lsf="colorls -f"
-alias lsr="colorls -r"
+alias lsr="colorls --report"
 alias ll="colorls -l"
 alias lla="colorls -lA"
 alias lst="colorls --tree"
@@ -126,14 +132,11 @@ alias lsga="colorls --gs -A"
 alias lsgd="colorls --gs -d"
 alias lsgt="colorls --gs --tree"
 
+
+# scripts on startup
 eval "$(starship init zsh)"
-
-pfetch
-
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
-. "/usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
-. "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
-. "$(dirname $(gem which colorls))/tab_complete.sh"
-
 eval "$(zoxide init zsh --cmd=cd)"
+
+# programs on startup
+pfetch

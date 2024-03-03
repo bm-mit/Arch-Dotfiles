@@ -65,7 +65,6 @@ yay -S visual-studio-code-bin \
 	wlogout \
 	idlehack \
 	auto-cpufreq \
-	zsh-syntax-highlighting \
 	zoxide \
 	fzf
 
