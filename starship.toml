@@ -11,6 +11,7 @@ format = '''
 right_format = """
 $username\
 $python\
+$golang\
 $dotnet
 """
 
@@ -27,12 +28,5 @@ error_symbol = '[➜](bold red)'
 
 [username]
 show_always = true
-format = '[$user]($style)'
+format = '[$user]($style) '
 style_user = 'bold green'
-
-[python]
-format = ' via [${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
-version_format = '${raw}'
-
-[dotnet]
-format = ' via [$symbol$version (🎯 $tfm )]($style)'

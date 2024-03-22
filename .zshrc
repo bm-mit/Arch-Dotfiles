@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=/home/mit-arch/.local/share/gem/ruby/3.0.0/bin:$PATH
+export PATH=/home/mit-arch/.local/share/gem/ruby/3.0.0/bin:/home/mit-arch/.local/bin:$PATH
 
 ZSH_DISABLE_COMPFIX=true
 PROMPT_EOL_MARK=''
@@ -140,3 +140,11 @@ eval "$(zoxide init zsh --cmd=cd)"
 
 # programs on startup
 pfetch
+
+# pnpm
+export PNPM_HOME="/home/mit-arch/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
