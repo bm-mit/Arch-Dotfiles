@@ -6,6 +6,7 @@ PROMPT_EOL_MARK=''
 
 setopt MENU_COMPLETE
 setopt globdots
+setopt correctall
 
 # Path to your oh-my-zsh installation.
 export ZSH="$(eval echo ~$USER)/.oh-my-zsh"
