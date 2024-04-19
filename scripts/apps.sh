@@ -48,7 +48,8 @@ sudo pacman -S \
 	fzf \
 	fd \
 	eza \
-	tldr
+	tldr \
+	thefuck
 
 # yay
 git clone https://aur.archlinux.org/yay.git

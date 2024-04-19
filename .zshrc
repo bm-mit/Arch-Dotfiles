@@ -6,7 +6,6 @@ PROMPT_EOL_MARK=''
 
 setopt MENU_COMPLETE
 setopt globdots
-setopt correctall
 
 # Path to your oh-my-zsh installation.
 export ZSH="$(eval echo ~$USER)/.oh-my-zsh"
@@ -120,6 +119,7 @@ eval "$(starship init zsh)"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(zoxide init zsh --cmd=cd)"
 eval "$(fzf --zsh)"
+eval "$(thefuck --alias)"
 
 # source
 source ~/.config/fzf-git.sh/fzf-git.sh
