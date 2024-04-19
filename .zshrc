@@ -138,6 +138,7 @@ alias lsgt="colorls --gs --tree"
 eval "$(starship init zsh)"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(zoxide init zsh --cmd=cd)"
+eval "$(fzf --zsh)"
 
 # programs on startup
 pfetch
