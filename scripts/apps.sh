@@ -45,7 +45,10 @@ sudo pacman -S \
 	tlp \
 	starship \
 	bat \
-	ruby
+	ruby \
+	fzf \
+	fd \
+	eza
 
 # yay
 git clone https://aur.archlinux.org/yay.git

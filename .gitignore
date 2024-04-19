@@ -24,6 +24,9 @@ media/desktop.png
 # sddm themes
 !sddm-themes/
 
+# except submodules
+!fzf-git.sh/
+
 # Except config folders
 !hypr/
 !waybar/
