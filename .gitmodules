@@ -1,6 +1,8 @@
+[submodule "fzf-git.sh"]
+	path = fzf-git.sh
+  url = https://github.com/junegunn/fzf-git.sh
+  branch = main
 [submodule "nvim"]
 	path = nvim
 	url = https://github.com/MIT4893-Projects/Neovim-Dotfiles
-[submodule "fzf-git.sh"]
-	path = fzf-git.sh
-	url = https://github.com/junegunn/fzf-git.sh
+	branch = master
