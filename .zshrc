@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=~/.local/share/gem/ruby/3.0.0/bin:~/.local/bin:$PATH
+export PATH=~/.local/bin:$PATH
 
 ZSH_DISABLE_COMPFIX=true
 PROMPT_EOL_MARK=''
@@ -81,6 +81,7 @@ plugins=(
     git
     sudo
     you-should-use
+    zsh-eza
     zsh-autosuggestions
     zsh-syntax-highlighting
 )

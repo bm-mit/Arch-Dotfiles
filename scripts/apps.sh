@@ -45,7 +45,6 @@ sudo pacman -S \
 	tlp \
 	starship \
 	bat \
-	ruby \
 	fzf \
 	fd \
 	eza
@@ -104,9 +103,6 @@ cd dragon-hyprland
 sudo make install
 cd ..
 rm -rf dragon-hyprland
-
-# install colorls
-gem install colorls
 
 # install ibus-bamboo
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/BambooEngine/ibus-bamboo/master/archlinux/install.sh)"
