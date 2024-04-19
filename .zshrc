@@ -119,7 +119,7 @@ eval "$(starship init zsh)"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(zoxide init zsh --cmd=cd)"
 eval "$(fzf --zsh)"
-eval "$(thefuck --alias)"
+eval "$(thefuck --alias f)"
 
 # source
 source ~/.config/fzf-git.sh/fzf-git.sh
