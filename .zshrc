@@ -78,15 +78,11 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-    copypath
-    dirhistory
     git
     sudo
     you-should-use
-    zsh-abbr
     zsh-autosuggestions
     zsh-syntax-highlighting
-    zsh-vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -117,28 +113,15 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh
 alias a="./a.out"
-alias cl="clear"
-
-# colorls aliases
-alias ls="colorls --sd"
-alias lsa="colorls -A"
-alias lsd="colorls -d"
-alias lsf="colorls -f"
-alias lsr="colorls --report"
-alias ll="colorls -l"
-alias lla="colorls -lA"
-alias lst="colorls --tree"
-alias lsg="colorls --gs"
-alias lsga="colorls --gs -A"
-alias lsgd="colorls --gs -d"
-alias lsgt="colorls --gs --tree"
-
 
 # scripts on startup
 eval "$(starship init zsh)"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(zoxide init zsh --cmd=cd)"
 eval "$(fzf --zsh)"
+
+# environment variables
+export LS_COLORS="$(vivid generate catppuccin-latte)"
 
 # programs on startup
 pfetch
