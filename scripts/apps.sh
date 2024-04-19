@@ -47,7 +47,8 @@ sudo pacman -S \
 	bat \
 	fzf \
 	fd \
-	eza
+	eza \
+	tldr
 
 # yay
 git clone https://aur.archlinux.org/yay.git
