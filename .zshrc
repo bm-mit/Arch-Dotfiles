@@ -16,6 +16,9 @@ export ZSH="$(eval echo ~$USER)/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
+# plugins configuration
+ZVM_INIT_MODE=sourcing
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -83,6 +86,7 @@ plugins=(
     zsh-eza
     zsh-autosuggestions
     zsh-syntax-highlighting
+    zsh-vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -114,7 +118,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh
 alias a="./a.out"
 
-alias ltg="eza --tree --git-ignore"
+alias l="eza --all --git-ignore --icons=always --color=always --git --group-directories-first"
+alias ltg="eza --all --tree --git-ignore $eza_params"
 
 # scripts on startup
 eval "$(starship init zsh)"
@@ -127,7 +132,7 @@ eval "$(thefuck --alias f)"
 source ~/.config/fzf-git.sh/fzf-git.sh
 
 # environment variables
-export LS_COLORS="$(vivid generate catppuccin-latte)"
+export LS_COLORS="$(vivid generate snazzy)"
 export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --color=always --exclude .git"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --color=always --exclude .git"
