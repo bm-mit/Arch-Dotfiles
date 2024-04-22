@@ -13,7 +13,7 @@ window#waybar {
 }
 
 .modules-left {
-  margin-left: 15px;
+  margin-left: 5px;
 }
 
 .modules-center {
@@ -21,7 +21,7 @@ window#waybar {
 }
 
 .modules-right {
-  margin-right: 15px;
+  margin-right: 5px;
 }
 
 #clock,
@@ -38,12 +38,12 @@ window#waybar {
 }
 
 #clock {
-  color: #0D6D63;
+  color: #0d6d63;
 }
 
 #window {
   font-weight: bold;
-  color: #1A5D75;
+  color: #1a5d75;
 }
 
 #workspaces {

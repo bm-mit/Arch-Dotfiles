@@ -3,9 +3,8 @@
   "mode": "dock",
   "layer": "top",
   "position": "bottom",
-  "spacing": 10,
-  "margin-bottom": 10,
-  "spacing": 10,
+  "spacing": 5,
+  "margin-bottom": 5,
 
   "modules-left": [
     "clock",
