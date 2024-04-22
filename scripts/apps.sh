@@ -80,7 +80,7 @@ yay -S visual-studio-code-bin \
 ) >>~/.zshrc
 
 # oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+. scripts/zsh.sh
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
