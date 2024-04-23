@@ -132,6 +132,7 @@ eval "$(thefuck --alias f)"
 source ~/.config/fzf-git.sh/fzf-git.sh
 
 # environment variables
+export KEYTIMEOUT=30
 export LS_COLORS="$(vivid generate snazzy)"
 export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --color=always --exclude .git"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
