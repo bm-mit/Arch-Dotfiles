@@ -6,3 +6,6 @@
 	path = nvim
 	url = https://github.com/MIT4893-Projects/Neovim-Dotfiles
 	branch = master
+[submodule "sddm-themes/sugar-candy"]
+	path = sddm-themes/sugar-candy
+	url = https://github.com/Kangie/sddm-sugar-candy
