@@ -1,5 +1,8 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=~/.local/bin:$PATH
+export PATH=~/.local/bin:$PATH:/home/mit-arch/fpc-2.2.2/bin
+
+export MANPATH=/home/mit-arch/fpc-2.2.2/man:$MANPATH
+export LD_LIBRARY_PATH=/home/mit-arch/fpc-2.2.2/lib:$LD_LIBRARY_PATH
 
 ZSH_DISABLE_COMPFIX=true
 PROMPT_EOL_MARK=''
@@ -82,6 +85,7 @@ ZVM_INIT_MODE=sourcing
 plugins=(
     git
     sudo
+    wakatime
     you-should-use
     zsh-eza
     zsh-autosuggestions
