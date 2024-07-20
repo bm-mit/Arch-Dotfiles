@@ -85,7 +85,7 @@ ZVM_INIT_MODE=sourcing
 plugins=(
     git
     sudo
-    wakatime
+    zsh-wakatime
     you-should-use
     zsh-eza
     zsh-autosuggestions
