@@ -130,7 +130,7 @@ eval "$(starship init zsh)"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(zoxide init zsh --cmd=cd)"
 eval "$(fzf --zsh)"
-eval "$(thefuck --alias f)"
+eval "$(thefuck --alias)"
 
 # source
 source ~/.config/fzf-git.sh/fzf-git.sh
@@ -167,7 +167,7 @@ _fzf_comprun() {
 }
 
 # programs on startup
-pfetch
+nitch
 
 # pnpm
 export PNPM_HOME="/home/mit-arch/.local/share/pnpm"
@@ -176,3 +176,5 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+eval $(thefuck --alias)
