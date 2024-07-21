@@ -1,106 +1,57 @@
+@define-color bg  #1D2021;
+@define-color bd  #6c757d;
+@define-color dim #adb5bd;
+@define-color fg  #dee2e6;
+@define-color rd  #8EC07C;
+
 * {
-  font-family: "Grandview", "Fira Code";
-  min-height: 0;
-  transition: all 0.2s;
+  border-radius: 6;
+  font-family: JetBrainsMono Nerd Font;
+  background: transparent;
+  font-size: 13px;
+  transition: all 0.1s;
 }
 
-code {
-  font-family: "Fira Code";
-}
-
-window#waybar {
-  background: rgba(0, 0, 0, 0);
-}
-
+.modules-right,
+.modules-center,
 .modules-left {
-  margin-left: 5px;
+  background: @bg;
+  margin: 3px 5px 3px;
+  padding: 0 15px;
+  border: 2px solid @bd;
+  border-radius: 8px;
+  color: @dim;
 }
 
 .modules-center {
-  margin: 0 10px;
+  padding: 0;
 }
 
 .modules-right {
-  margin-right: 5px;
-}
-
-#clock,
-#window,
-#workspaces,
-#battery,
-#backlight,
-#pulseaudio,
-#network,
-#bluetooth {
-  background: rgba(256, 256, 256, 0.7);
-  border-radius: 500px;
-  padding: 0 10px;
-}
-
-#clock {
-  color: #0d6d63;
+  color: @fg;
 }
 
 #window {
-  font-weight: bold;
-  color: #1a5d75;
+  color: @fg;
 }
 
-#workspaces {
-  padding: 4px 2px;
+#workspaces button:hover,
+#workspaces button.active {
+  color: @fg;
+  text-shadow: none;
 }
 
 #workspaces button {
-  border-radius: 500px;
-  padding: 3px;
-  margin: 0 2px;
-  background: #707070;
-  color: rgba(256, 256, 256, 0.7);
-  font-weight: normal;
-}
-
-#taskbar button,
-#taskbar button:hover,
-#workspaces button,
-#workspaces button:hover,
-#workspaces button.active,
-#workspaces button.active:hover {
   border: none;
   box-shadow: none;
-  font-size: 13px;
+  padding: 0px 5px;
+  color: @bd;
 }
 
-#taskbar button:hover,
-#workspaces button:hover {
-  background: rgba(160, 160, 160, 0.9);
+#workspaces button.urgent {
+  color: @rd;
 }
 
-#workspaces button.active:hover {
-  background: rgba(0, 53, 84, 0.7);
-}
-
-#workspaces button.active {
-  background: #003554;
-  padding: 1px 10px;
-  font-weight: bold;
-}
-
-#battery {
-  color: #805b10;
-}
-
-#backlight {
-  color: #023e8a;
-}
-
-#pulseaudio {
-  color: #2d6a4f;
-}
-
-#network {
-  color: #333333;
-}
-
-#bluetooth {
-  color: #1565c0;
+#clock.time.module {
+  color: @fg;
 }

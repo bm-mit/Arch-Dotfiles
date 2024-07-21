@@ -1,86 +1,97 @@
-[{
-  "name": "waybar",
-  "mode": "dock",
-  "layer": "top",
-  "position": "bottom",
-  "spacing": 5,
-  "margin-bottom": 5,
+[
+  {
+    "name": "waybar",
+    "position": "top",
+    "spacing": 15,
+    "margin-top": 5,
+    "reload_style_on_change": true,
 
-  "modules-left": [
-    "clock",
-    "hyprland/workspaces",
-    "hyprland/window"
-  ],
+    "modules-left": ["clock#time", "clock#date", "hyprland/window"],
 
-  "modules-right": [
-    "battery",
-    "backlight",
-    "pulseaudio",
-    "network",
-    "bluetooth"
-  ],
+    "modules-center": ["hyprland/workspaces"],
 
-  "clock": {
-    "interval": 1,
-    "format": "{:%H:%M:%S %Y-%m-%d}",
-    "tooltip-format": "{calendar}"
-  },
+    "modules-right": [
+      "battery",
+      "backlight",
+      "pulseaudio",
+      "network",
+      "bluetooth",
+    ],
 
-  "wlr/taskbar": {
-    "on-click": "activate"
-  },
-
-  "hyprland/workspaces": {
-    "format": "{id}",
-  },
-
-  "battery": {
-    "interval": 10,
-    "format": "{icon} {}%",
-    "format-charging": " {capacity}%",
-    "format-plugged": "  {capacity}%",
-    "format-alt": "{time} {icon}",
-    "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
-  },
-
-  "backlight": {
-    "format": "{icon}  {}%",
-    "format-icons": ["󰃞", "󰃟", "󰃠"]
-  },
-
-  "pulseaudio": {
-    "format": "{icon}  {volume}%",
-    "format-muted": "󰝟  0%",
-    "format-icons": {
-      "headphone": "",
-      "hands-free": "",
-      "headset": "",
-      "phone": "",
-      "portable": "",
-      "car": "",
-      "default": ["󰕿", "󰖀", "󰕾"],
+    "clock#time": {
+      "interval": 1,
+      "format": "{:L%R}",
+      "tooltip-format": "{calendar}",
     },
-    "on-click": "pavucontrol"
-  },
 
-  "network": {
-    "format": "{ifname}",
-    "format-wifi": "{icon}  {essid}",
-    "format-ethernet": "󰈀  {ipaddr}",
-    "format-disconnected": "󰤮  Disconnected",
-    "format-icons": {
-      "wifi": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤥"]
+    "clock#date": {
+      "interval": 1,
+      "format": "{:%a %d/%m}",
     },
-    "on-click": ". ~/.config/waybar/rofi-wifi-menu/rofi-wifi-menu.sh"
-  },
 
-  "bluetooth": {
-    "format": "{icon} {status}",
-    "format-connected": "{icon} {num_connections} connected",
-    "format-icons": ["󰂯"],
-    "on-click": "~/.config/waybar/rofi-bluetooth/rofi-bluetooth"
-  }
-}
+    "hyprland/window": {
+      "max-length": 50,
+    },
+
+    "hyprland/workspaces": {
+      // "format": "{icon} ",
+      "on-click": "activate",
+      "all-outputs": "true",
+      "format-icons": {
+        "urgent": "",
+        "active": "",
+        "default": "",
+      },
+      "tooltip": false,
+    },
+
+    "battery": {
+      "interval": 10,
+      "format": "<span foreground=\"#6c757d\">{icon}</span> {}%",
+      "format-charging": "<span foreground=\"#6c757d\"></span> {capacity}%",
+      "format-plugged": "<span foreground=\"#6c757d\"> </span> {capacity}%",
+      "format-alt": "{time} {icon}",
+      "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+    },
+
+    "backlight": {
+      "format": "<span foreground=\"#6c757d\">{icon}</span>  {}%",
+      "format-icons": ["󰃞", "󰃟", "󰃠"],
+    },
+
+    "pulseaudio": {
+      "format": "<span foreground=\"#6c757d\">{icon}</span>  {volume}%",
+      "format-muted": "<span foreground=\"#6c757d\">󰝟 </span> 0%",
+      "format-icons": {
+        "headphone": "<span foreground=\"#6c757d\"></span>",
+        "hands-free": "<span foreground=\"#6c757d\"></span>",
+        "headset": "<span foreground=\"#6c757d\"></span>",
+        "phone": "<span foreground=\"#6c757d\"></span>",
+        "portable": "<span foreground=\"#6c757d\"></span>",
+        "car": "<span foreground=\"#6c757d\"></span>",
+        "default": ["󰕿", "󰖀", "󰕾"],
+      },
+      "on-click": "pavucontrol",
+    },
+
+    "network": {
+      "format": "{ifname}",
+      "format-wifi": "<span foreground=\"#6c757d\">{icon}</span>  wifi",
+      "format-ethernet": "<span foreground=\"#6c757d\">󰈀 </span> lan",
+      "format-disconnected": "<span foreground=\"#6c757d\">󰤮 </span> null",
+      "format-icons": {
+        "wifi": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤥"],
+      },
+      "on-click": ". ~/.config/waybar/rofi-wifi-menu/rofi-wifi-menu.sh",
+    },
+
+    "bluetooth": {
+      "format": "{icon} {status}",
+      "format-connected": "{icon} {num_connections}",
+      "format-icons": ["<span foreground=\"#6c757d\">󰂯</span>"],
+      "on-click": "~/.config/waybar/rofi-bluetooth/rofi-bluetooth",
+    },
+  },
 ]
 // {
 //  "mode": "dock",
@@ -88,4 +99,4 @@
 //  "modules-center": ["hyprland/window"],
 //  "margin-top": 10,
 //  "height": 25,
-}]
+// }]
