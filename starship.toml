@@ -4,12 +4,11 @@
 add_newline = false
 
 format = '''
- $directory$git_branch$git_status
+ $username$hostname$directory$git_branch$git_status
  $character
 '''
 
 right_format = """
-$username\
 $python\
 $golang\
 $dotnet
@@ -28,5 +27,9 @@ error_symbol = '[➜](bold red)'
 
 [username]
 show_always = true
-format = '[$user]($style) '
-style_user = 'bold green'
+format = '[$user@]($style)'
+style_user = 'dimmed cyan'
+
+[hostname]
+ssh_only = false
+style = 'dimmed cyan'
